@@ -1,0 +1,1 @@
+L'application CodexBox demande l'accès à la caméra de votre appareil dans le seul but de scanner des QR Codes pour faciliter les transferts de crypto-monnaie (Celo). Aucune image ni vidéo n'est enregistrée, sauvegardée sur nos serveurs, ou partagée avec des tiers.
