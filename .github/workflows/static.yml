@@ -1,1 +1,10 @@
-L'application CodexBox demande l'accès à la caméra de votre appareil dans le seul but de scanner des QR Codes pour faciliter les transferts de crypto-monnaie (Celo). Aucune image ni vidéo n'est enregistrée, sauvegardée sur nos serveurs, ou partagée avec des tiers.
+            - name: Data Privacy Compliance Checker
+  # You may pin to the exact commit or the version.
+  # uses: ModelGuardHQ-Tools/data-privacy-compliance-action@194d44939851e3198de8abd47625ed5328aec361
+  uses: ModelGuardHQ-Tools/data-privacy-compliance-action@v1.0.0
+  with:
+    # Glob patterns of files to scan.
+    files: # optional, default is **/*
+    # Path to JSON of regex patterns.
+    patterns-file: # optional, default is data/patterns.json
+          
