@@ -1,0 +1,38 @@
+
+1. Nature de l'Application (Le point le plus important pour Google)
+
+C'est ici que tu déclares officiellement ton statut technique.
+
+    Clause "Portefeuille Non-Custodial" : "CodexBox est une interface logicielle décentralisée (portefeuille non-custodial). Nous ne sommes pas une banque, ni une institution financière, ni un dépositaire. L'application permet aux utilisateurs de se connecter directement à la blockchain (Celo) pour gérer leurs propres actifs numériques."
+
+    Clause "Absence de Contrôle" : "À aucun moment CodexBox, ses développeurs ou ses serveurs n'ont accès, ne détiennent, ni ne contrôlent les fonds (FCFA, cUSD) de l'utilisateur."
+
+2. Gestion des Clés Privées et de la Sécurité
+
+Pour justifier l'utilisation de androidx.security:security-crypto et rassurer sur le piratage.
+
+    Clause "Clés Privées et Seed Phrases" : "Vos clés privées et phrases de récupération sont générées et stockées exclusivement et localement sur votre appareil mobile. Elles sont chiffrées selon les standards de sécurité les plus élevés du marché mobile. CodexBox ne collecte pas, ne transmet pas et ne sauvegarde jamais vos clés sur ses serveurs."
+
+    Clause "Responsabilité de l'Utilisateur" : "L'utilisateur est le seul propriétaire et responsable de la sauvegarde de ses clés d'accès. En cas de perte de l'appareil ou de désinstallation sans sauvegarde préalable, CodexBox n'a aucun moyen technique de restaurer les fonds."
+
+3. Fonctionnement "Offline-First" (Transparence technique)
+
+Il faut expliquer à Google pourquoi des transactions sont "en attente" localement.
+
+    Clause "Mise en file d'attente locale" : "Pour garantir l'accessibilité dans les zones à faible connectivité, CodexBox utilise un système de mise en file d'attente locale. Les intentions de transaction sont signées cryptographiquement sur l'appareil de l'utilisateur de manière isolée, et ne sont diffusées sur le réseau public que lorsque la connexion internet est rétablie."
+
+4. Intégration des Protocoles Tiers (DeFi & Gasless)
+
+Pour te dédouaner des protocoles d'épargne (HaloFi, Moola) et expliquer le Gasless.
+
+    Clause "Smart Contracts et Services Tiers" : "Les fonctionnalités d'épargne et de génération de rendement proposées dans l'application interagissent directement avec des protocoles autonomes de la finance décentralisée (ex: HaloFi, Moola). CodexBox ne gère pas ces rendements. L'utilisateur interagit avec ces contrats intelligents à ses propres risques."
+
+    Clause "Frais de Réseau (Gasless)" : "L'application utilise une technologie de relais (relayers) pour faciliter le paiement des frais de transaction réseau (Gas). Ce processus automatisé ne confère à CodexBox aucun droit de regard sur la transaction principale de l'utilisateur."
+
+5. Données Collectées pour le Fonctionnement (Permissions)
+
+Ici, tu justifies les permissions Android demandées.
+
+    Caméra : "L'accès à l'appareil photo est demandé uniquement pour scanner des codes QR afin de faciliter la saisie des adresses de destination lors d'un transfert. Aucune image ni vidéo n'est enregistrée ou transmise à nos serveurs."
+
+    Notifications : "Nous utilisons les notifications locales pour vous informer du succès d'une transaction, particulièrement suite au rétablissement de votre connexion internet (mode hors ligne)."
